@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header h1 {
+    margin: 20px;
+}
+header h2 {
+    margin: 20px;
+}
+
+
+.board {
+    display: flex;
+    flex-flow: row wrap;
+    width: 400px; 
+}
+
+.box {
+    flex: 1 0 33%;
+    border: 5px solid darkgray;
+    min-height: 15vh;
+}
