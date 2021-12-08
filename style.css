@@ -6,21 +6,59 @@
 }
 
 header h1 {
-    margin: 20px;
+    margin: 40px;
+    text-shadow: 1px 1px 3px grey;
 }
 header h2 {
-    margin: 20px;
+    margin: 15px;
 }
 
 
 .board {
     display: flex;
     flex-flow: row wrap;
-    width: 400px; 
+    width: 300px; 
+    margin: 30px auto;
+    box-shadow: 5px 5px 10px black;
 }
 
 .box {
     flex: 1 0 33%;
-    border: 5px solid darkgray;
-    min-height: 15vh;
+    border: 5px solid black;
+    min-height: 11vh;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: rgb(221, 221, 221);
+    box-shadow: 3px 3px 30px black;
+}
+
+.players{
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    height: 100px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: white;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 5px 5px 10px black;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 7px 7px 15px black;
+}
+
+#will, #gordon {
+    border: 3px solid black;
+    width: 50%;
 }
